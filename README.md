@@ -31,7 +31,7 @@ Step 1: Open GitHub Desktop. Here is the link if you need to download:
 ```bash
 https://desktop.github.com/
 ```
-Step 2: Make sure you are signed in to GitHub.
+Step 2: Open the application and make sure you are signed in to GitHub.
 
 Step 3: Click File > Clone Repository > URL. Use paste this link:
 ```bash
