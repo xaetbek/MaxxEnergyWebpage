@@ -38,8 +38,8 @@ git pull origin main
 ```
 
 ### 3. **Create and switch to your working branch** 
-```bash
 Change feature to the name of whatever you're working on
+```bash
 git checkout -b feature-YourName
 ```
 
