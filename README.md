@@ -28,5 +28,5 @@ Follow these steps to set up the project locally and contribute:
 
 ### 1. **Clone the Repository**
 ```bash
-git clone https://github.com/YOUR-USERNAME/REPO-NAME.git
+git clone https://github.com/YOUR-USERNAME/MaxxEnergyWebpage.git
 cd REPO-NAME
