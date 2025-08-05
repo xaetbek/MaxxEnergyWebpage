@@ -26,9 +26,24 @@ Welcome to our collaborative team project for building the official website for 
 
 Follow these steps to set up the project locally and contribute:
 
-### 1. **Clone the Repository**
+### 1a. **Clone the Repository (GitHub Desktop)**
+Step 1: Open GitHub Desktop. Here is the link if you need to download:
 ```bash
-Clone from GitHub Desktop cuz its easier
+https://desktop.github.com/
+```
+Step 2: Make sure you are signed in to GitHub.
+
+Step 3: Click File > Clone Repository > URL. Use paste this link:
+```bash
+https://github.com/jacobjdramos2/MaxxEnergyWebpage.git
+```
+
+Step 4: Clone the Repo. 
+
+### 1b. **Clone the Repository (Terminal)**
+You may also clone from terminal if you prefer that (use this HTTP link):
+```bash
+git clone https://github.com/username/MaxxEnergyWebpage.git
 ```
 
 ### 2. **Pull from main**
