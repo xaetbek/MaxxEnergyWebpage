@@ -63,10 +63,9 @@ git checkout -b feature-YourName
 git push -u origin feature-YourName
 ```
 ### IMPORTANT ###
-<details>
-<summary>🚫 <strong>Do Not Push Directly to <code>main</code></strong></summary>
+Do Not Push Directly to <code>main</code>
 
-⚠️ **Important:** The `main` branch is reserved for stable, production-ready code. To prevent conflicts and accidental overwrites, follow this rule:
+⚠️ The `main` branch is reserved for stable, production-ready code. To prevent conflicts and accidental overwrites, follow this rule:
 
 - **DO NOT** push directly to the `main` branch
 - Always create a working branch from `dev` or `main` using:
@@ -77,15 +76,13 @@ git push -u origin feature-YourName
   
 Push your changes to your branch:
 
-bash
-Copy code
+```bash
 git push -u origin feature-yourname
+```
 Submit a Pull Request into the dev branch for review
 
 Only the team lead will merge into main after testing and approval
 
 ✅ Thank you for helping keep our project organized, collaborative, and bug-free!
-
-</details> ```
 
 
