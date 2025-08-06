@@ -70,8 +70,8 @@ Do Not Push Directly to <code>main</code>
 - **DO NOT** push directly to the `main` branch
 - Always create a working branch from `dev` or `main` using:
   ```bash
-  git checkout dev        # or main
-  git pull origin dev     # or main
+  git checkout dev        
+  git pull origin dev     
   git checkout -b feature-yourname
   
 Push your changes to your branch:
