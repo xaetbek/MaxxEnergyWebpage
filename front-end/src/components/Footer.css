@@ -65,6 +65,7 @@
 .footer-text {
   font-size: 14px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .newsletter-form {
@@ -107,8 +108,8 @@
 }
 
 .social-icons img {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   transition: transform 0.2s ease;
 }
 

@@ -1,5 +1,6 @@
-import React from "react";
 import "./Home.css";
+import dashboardMockup from "../assets/images/home-page-images/dashboard.png";
+import React from "react";
 
 function Home() {
   return (
@@ -47,12 +48,12 @@ function Home() {
           </p>
         </div>
         <div class="about-image">
-          <img src="your-dashboard-mockup.png" alt="Dashboard preview" />
+          <img src={dashboardMockup} alt="Dashboard preview" />
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section class="final-cta">
+      <section class="final-cta final-cta-card">
         <h2>Access the data you need, when you need it — securely.</h2>
         <a href="#" class="btn btn-primary">Get Started</a>
       </section>
