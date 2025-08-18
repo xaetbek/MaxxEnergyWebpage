@@ -1,21 +1,32 @@
-import './App.css';
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import "./App.css";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-// import About from './pages/About';
-// import Blog from './pages/Blog';
-// import BlogPost from './pages/BlogPost';
-// import Contact from './pages/Contact';
-// import ErrorBoundary from './components/ErrorBoundary';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Contact from './pages/Contact';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("Home");
+
+  const renderPage = () => {
+    switch (currentPage) {
+      case "About":
+        return <About />;
+      case "Blog":
+        return <Blog />;
+      case "Contact":
+        return <Contact />;
+      default:
+        return <Home />;
+    }
+  };
+
   return (
     <div className="App">
-      <Navbar />
-      <main>
-        <Home />
-      </main>
+      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+      <main>{renderPage()}</main>
       <Footer />
     </div>
   );

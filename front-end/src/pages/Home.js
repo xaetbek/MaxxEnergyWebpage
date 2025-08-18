@@ -1,5 +1,6 @@
-import React from "react";
 import "./Home.css";
+import dashboardMockup from "../assets/images/home-page-images/dashboard.png";
+import React from "react";
 
 function Home() {
   return (
@@ -10,8 +11,8 @@ function Home() {
           <h1>Your Gateway to Solar Plant Insights</h1>
           <p>Secure, real-time access to solar generation data for informed decision-making.</p>
           <div class="hero-buttons">
-            <a href="#" class="btn btn-primary">Login</a>
-            <a href="#" class="btn btn-secondary">Learn More</a>
+            <a href="https://maxxpotential.com/" class="btn btn-primary">Login</a>
+            <a href="https://maxxpotential.com/" class="btn btn-secondary">Learn More</a>
           </div>
         </div>
       </section>
@@ -47,14 +48,14 @@ function Home() {
           </p>
         </div>
         <div class="about-image">
-          <img src="your-dashboard-mockup.png" alt="Dashboard preview" />
+          <img src={dashboardMockup} alt="Dashboard preview" />
         </div>
       </section>
 
       {/* Call to Action Section */}
-      <section class="final-cta">
+      <section class="final-cta final-cta-card">
         <h2>Access the data you need, when you need it — securely.</h2>
-        <a href="#" class="btn btn-primary">Get Started</a>
+        <a href="https://maxxpotential.com/" class="btn btn-primary">Get Started</a>
       </section>
     </main>
 

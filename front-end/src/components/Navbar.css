@@ -10,7 +10,9 @@
 .logo-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .logo-img {
@@ -28,12 +30,20 @@
   font-size: 20px;
 }
 
-.nav-links a {
+.nav-links button {
+  background: none;
+  border: none;
   color: #fff;
+  font-size: 20px;
+  cursor: pointer;
   text-decoration: none;
+  padding: 0;
 }
 
-.nav-links a:hover {
-  text-decoration: none; /* removes underline */
-  color: yellow; /* highlights in yellow */
+.nav-links button:hover {
+  color: yellow;
+}
+.nav-links .active {
+  color: yellow;
+  font-weight: bold;
 }
