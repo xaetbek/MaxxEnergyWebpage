@@ -2,44 +2,48 @@ import React from "react";
 import "./Navbar.css";
 import logo from "../assets/images/navbar-logo-yellow.jpeg";
 
-function Navbar() {
+function Navbar({ currentPage, setCurrentPage }) {
   return (
     <nav className="nav">
-      <a href="/" className="logo-link">
+      <button onClick={() => setCurrentPage("Home")} className="logo-link">
         <img src={logo} alt="MAXX Energy Logo" className="logo-img" />
-      </a>
+      </button>
       <ul className="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li>
+          <button 
+            onClick={() => setCurrentPage("Home")} 
+            className={currentPage === "Home" ? "active" : ""}
+          >
+            Home
+          </button>
+        </li>
+        <li>
+          <button 
+            onClick={() => setCurrentPage("About")} 
+            className={currentPage === "About" ? "active" : ""}
+          >
+            About
+          </button>
+        </li>
+        <li>
+          <button 
+            onClick={() => setCurrentPage("Blog")} 
+            className={currentPage === "Blog" ? "active" : ""}
+          >
+            Blog
+          </button>
+        </li>
+        <li>
+          <button 
+            onClick={() => setCurrentPage("Contact")} 
+            className={currentPage === "Contact" ? "active" : ""}
+          >
+            Contact
+          </button>
+        </li>
       </ul>
     </nav>
   );
 }
 
 export default Navbar;
-
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import "./Navbar.css";
-// import logo from "../assets/images/navbar-logo-yellow.jpeg";
-
-// function Navbar() {
-//   return (
-//     <nav className="nav">
-//       <Link to="/" className="logo-link">
-//         <img src={logo} alt="MAXX Energy Logo" className="logo-img" />
-//       </Link>
-//       <ul className="nav-links">
-//         <li><Link to="/">Home</Link></li>
-//         <li><Link to="/about">About</Link></li>
-//         <li><Link to="/blog">Blog</Link></li>
-//         <li><Link to="/contact">Contact</Link></li>
-//       </ul>
-//     </nav>
-//   );
-// }
-
-// export default Navbar;
