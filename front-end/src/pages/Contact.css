@@ -1,0 +1,96 @@
+/* Contact.css */
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #f5f6fa; /* soft background contrast */
+  min-height: 50vh;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.contact-card h1 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.contact-card p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+/* Form styling */
+.contact-form label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #496DA7;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Button */
+.contact-form button {
+  background-color: #496DA7;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #36547f;
+}
+
+/* Error + Success messages */
+.contact-form .contact-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -12px;
+  margin-bottom: 12px;
+}
+
+.contact-success {
+  color: green;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Highlight input with red border on error */
+.input-error {
+  border: 1px solid red !important;
+  outline: none;
+}
