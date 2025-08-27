@@ -4,9 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 60px 20px;
+  padding: 60px 5px;
   background-color: #f5f6fa; /* soft background contrast */
-  min-height: 50vh;
+  min-height: 40vh;
 }
 
 .contact-card {
@@ -21,7 +21,7 @@
 .contact-card h1 {
   margin-bottom: 10px;
   font-size: 1.8rem;
-  color: #333;
+  color: #496DA7;
 }
 
 .contact-card p {
@@ -93,4 +93,11 @@
 .input-error {
   border: 1px solid red !important;
   outline: none;
+}
+
+.contact-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
 }
