@@ -35,6 +35,14 @@ function Navbar({ currentPage, setCurrentPage }) {
         </li>
         <li>
           <button 
+            onClick={() => setCurrentPage("Careers")} 
+            className={currentPage === "Careers" ? "active" : ""}
+          >
+            Careers
+          </button>
+        </li>
+        <li>
+          <button 
             onClick={() => setCurrentPage("Contact")} 
             className={currentPage === "Contact" ? "active" : ""}
           >
